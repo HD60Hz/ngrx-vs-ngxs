@@ -8,7 +8,7 @@
     <p>Username: <span class="badge badge-success">{{ state.app.username }}</span></p>
 
     <div *ngIf="!state.app.username">
-        <input class="form-control" aria-placeholder="your name..."  type="text" [(ngModel)]="username">
+        <input class="form-control" placeholder="your name..."  type="text" [(ngModel)]="username">
         <button class="btn btn-outline-secondary" [disabled]="!username" (click)="clickHandler(username)">Name for this Order</button>
     </div>
 
